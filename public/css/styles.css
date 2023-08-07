@@ -1,0 +1,56 @@
+/*changing/styling elements in written .html files using css - will need to be loaded in inside HTML file*/
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto; /*1st number is for top/bottom margin, 2nd is auto for left/right margin*/
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% of viewport height (page height) */
+}
+
+.main-content {
+    flex-grow: 1; 
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a { /* header a is for links inside the header area */
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: underline;
+}
+
+.portrait {
+    width: 700px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
