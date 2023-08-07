@@ -1,12 +1,3 @@
-console.log('clientside javascript file is loaded')
-
-fetch('https://puzzle.mead.io/puzzle', {headers: {'Origin': 'http://localhost:3000'}}).then((response) => {
-    response.json().then((data) => {
-        console.log(data)
-    })
-})
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1') /* use # to target an ID for <p> */ 
