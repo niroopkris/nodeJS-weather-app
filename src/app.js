@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()   //great tool for making front-end webservers 
+const port = process.env.PORT || 3000
 
 //Define paths for Express config
                                                             //public is the directory which will contain contents we want to take and display to the browser
@@ -104,6 +105,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => { //starts the server, parameter = port  -- this server will stay running until we close it
+app.listen(port, () => { //starts the server, parameter = port  -- this server will stay running until we close it
     console.log('Server is up on port 3000')
 }) 
